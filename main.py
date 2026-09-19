@@ -26,8 +26,9 @@ from threading import Thread
 app = Flask('')
 @app.route('/')
 def home():
-    return "🤖 
-    ᴅᴇsᴛʀᴏʏᴇʀ ʜᴏsᴛɪɴɢ ʙᴏᴛ is Running!"
+    return """🤖 
+    ᴅᴇsᴛʀᴏʏᴇʀ ʜᴏsᴛɪɴɢ ʙᴏᴛ is Running!"""
+    
 @app.route('/health')
 def health():
     return {"status": "healthy", "uptime": get_uptime()}
